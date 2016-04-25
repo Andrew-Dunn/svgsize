@@ -5,7 +5,8 @@
   "main": "lib/index.js",
   "scripts": {
     "test": "mocha",
-    "build-svglengthparser": "pushd lib && jison svglengthparser.json && popd"
+    "build-svglengthparser": "pushd lib && jison svglengthparser.json && popd",
+    "prepublish": "npm run build-svglengthparser"
   },
   "keywords": [
     "svg",
