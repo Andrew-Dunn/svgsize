@@ -1,14 +1,32 @@
 {
-  "name": "svginfo",
+  "name": "svgsize",
   "version": "1.0.0",
   "description": "A library that extracts size information from SVG files.",
   "main": "lib/index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "mocha",
+    "build-svglengthparser": "pushd lib && jison svglengthparser.json && popd"
   },
   "keywords": [
-    "svg"
+    "svg",
+    "size"
   ],
+  "dependencies": {
+    "xmldom": "^0.1.21"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git://github.com/Andrew-Dunn/svgsize.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Andrew-Dunn/svgsize/issues"
+  },
   "author": "Andrew Dunn <andrew@dunn.name>",
-  "license": "Apache-2.0"
+  "license": "Apache-2.0",
+  "devDependencies": {
+    "chai": "^3.5.0",
+    "chai-fuzzy": "^1.6.1",
+    "mocha": "^2.4.5",
+    "jison": "^0.4.17"
+  }
 }
