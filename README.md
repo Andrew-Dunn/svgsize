@@ -1,4 +1,4 @@
-![svgsize](assets/svgsize-logo.svg)
+![svgsize](https://cdn.rawgit.com/Andrew-Dunn/svgsize/master/assets/svgsize-logo.svg)
 ===
 
 Summary
