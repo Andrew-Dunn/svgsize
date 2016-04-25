@@ -3,10 +3,9 @@
 
 Summary
 ---
-**svgsize** is a JavaScript library that can
-parse an SVG vector image document and extract information about its dimensions.
-It works by parsing the SVG XML document using the excellent
-**xmldom**<sup>[\[repo]][xmldom-repo][\[npm]][xmldom-npm]</sup> library.
+**svgsize** is a JavaScript library that can parse an SVG vector image document
+and extract information about its dimensions. It works by parsing the SVG XML
+document using the excellent **xmldom** library.
 
 Usage
 ---
@@ -32,6 +31,3 @@ License
 **svgsize** is licensed under the Apache License, Version 2.0.
 You may obtain a copy of the license at
 http://www.apache.org/licenses/LICENSE-2.0.
-
-[xmldom-repo]: https://github.com/jindw/xmldom
-[xmldom-npm]:  https://www.npmjs.com/package/xmldom
