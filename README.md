@@ -1,9 +1,9 @@
-![svginfo](assets/svginfo-logo.svg)
+![svgsize](assets/svgsize-logo.svg)
 ===
 
 Summary
 ---
-**svginfo** is a JavaScript library that can
+**svgsize** is a JavaScript library that can
 parse an SVG vector image document and extract information about its dimensions.
 It works by parsing the SVG XML document using the excellent
 **xmldom**<sup>[\[repo]][xmldom-repo][\[npm]][xmldom-npm]</sup> library.
@@ -12,24 +12,24 @@ Usage
 ---
 ```JavaScript
 var fs = require('fs');
-var SVGInfo = require('svginfo').SVGInfo;
+var svgsize = require('svgsize');
 
 var contents = fs.readFileSync('example.svg', 'utf8');
 
-// Constructing a new SVGInfo object will parse the SVG file and calculate its
+// Calling svgsize() will parse the given SVG file and calculate its
 // size. If an error occurs during parsing, it will throw an error.
-var dimensions = new SVGInfo(contents);
+var dimensions = svgsize(contents);
 
-// SVGInfo::width will give the width of the file in pixels.
+// .width will give the width of the file in pixels.
 console.log(dimensions.width);
 
-// SVGInfo::height will give the height of the file in pixels.
+// .height will give the height of the file in pixels.
 console.log(dimensions.height);
 ```
 
 License
 ---
-**svginfo** is licensed under the Apache License, Version 2.0.
+**svgsize** is licensed under the Apache License, Version 2.0.
 You may obtain a copy of the license at
 http://www.apache.org/licenses/LICENSE-2.0.
 
