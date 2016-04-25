@@ -176,5 +176,11 @@ describe('The svgsize JavaScript library', () => {
             expect(info.width).to.equal(6773.98);
             expect(info.height).to.equal(74.2);
         });
+
+        it("should work with real files.", () => {
+            let svgsizeLogo = fs.readFileSync('assets/svgsize-logo.svg', 'utf8');
+            let info = svgsize(svgsizeLogo);
+            expect(info).to.be.like({width: 1024, height: 420});
+        })
     });
 });
