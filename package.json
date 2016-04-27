@@ -2,19 +2,8 @@
   "name": "svgsize",
   "version": "1.0.0",
   "description": "A library that extracts size information from SVG files.",
-  "main": "lib/index.js",
-  "scripts": {
-    "test": "mocha",
-    "build": "gulp build",
-    "prepublish": "npm run build"
-  },
-  "keywords": [
-    "svg",
-    "size"
-  ],
-  "dependencies": {
-    "xmldom": "^0.1.21"
-  },
+  "author": "Andrew Dunn <andrew@dunn.name>",
+  "license": "Apache-2.0",
   "repository": {
     "type": "git",
     "url": "git://github.com/Andrew-Dunn/svgsize.git"
@@ -22,8 +11,18 @@
   "bugs": {
     "url": "https://github.com/Andrew-Dunn/svgsize/issues"
   },
-  "author": "Andrew Dunn <andrew@dunn.name>",
-  "license": "Apache-2.0",
+  "main": "lib/index.js",
+  "scripts": {
+    "test": "mocha",
+    "build": "gulp build",
+    "prepublish": "npm run build"
+  },
+  "engines": {
+    "node": ">=0.1"
+  },
+  "dependencies": {
+    "xmldom": "^0.1.21"
+  },
   "devDependencies": {
     "gulp": "^3.9.1",
     "gulp-babel": "^6.1.2",
@@ -32,5 +31,9 @@
     "mocha": "^2.4.5",
     "chai": "^3.5.0",
     "chai-fuzzy": "^1.6.1"
-  }
+  },
+  "keywords": [
+    "svg",
+    "size"
+  ]
 }
