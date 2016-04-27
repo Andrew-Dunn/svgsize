@@ -1,2 +1,3 @@
 node_modules
-lib/svglengthparser.js
+lib/*.js
+test/*.js

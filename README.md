@@ -7,6 +7,14 @@ Summary
 and extract information about its dimensions. It works by parsing the SVG XML
 document using the excellent **xmldom** library.
 
+Installation
+---
+To install **svgsize**, simply run:
+
+```shell
+npm install svgsize
+```
+
 Usage
 ---
 ```JavaScript
