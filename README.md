@@ -1,5 +1,8 @@
 ![svgsize](https://cdn.rawgit.com/Andrew-Dunn/svgsize/master/assets/svgsize-logo.svg)
 ===
+[![Build Status](https://travis-ci.org/Andrew-Dunn/svgsize.svg?branch=master)](https://travis-ci.org/Andrew-Dunn/svgsize)
+[![Coverage Status](https://coveralls.io/repos/github/Andrew-Dunn/svgsize/badge.svg?branch=master)](https://coveralls.io/github/Andrew-Dunn/svgsize?branch=master)
+[![Dependency Status](https://david-dm.org/Andrew-Dunn/svgsize.svg)](https://david-dm.org/Andrew-Dunn/svgsize)
 
 Summary
 ---
