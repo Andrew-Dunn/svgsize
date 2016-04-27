@@ -1,6 +1,6 @@
 {
   "name": "svgsize",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "A library that extracts size information from SVG files.",
   "author": "Andrew Dunn <andrew@dunn.name>",
   "license": "Apache-2.0",
