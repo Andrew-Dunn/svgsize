@@ -19,8 +19,8 @@
 let parser = require('./svglengthparser.js').parser;
 
 module.exports = function parseSVGLength(string) {
-    if (typeof string !== 'string') {
-        throw Error(`parselength() expected a string, but instead got a '${typeof string}'.`)
+    if (typeof string !== 'string' && !(string instanceof String)) {
+        throw Error(`parselength() expected a string, but instead got: '${String(string)}'.`)
     }
     return parser.parse(string);
 }

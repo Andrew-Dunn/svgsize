@@ -26,6 +26,15 @@ chai.use(require('chai-fuzzy'));
 
 describe('The svgsize JavaScript library', () => {
     describe('Parsing SVG lengths', () => {
+        it('should only accept strings', () => {
+            expect(() => {
+                parselength(0)
+            }).to.throw(Error, "parselength() expected a string, but instead got: '0'.");
+            expect(() => {
+                parselength(new String('+50em'));
+            }).to.not.throw();
+        });
+
         it('should be able to parse all valid SVG length values', () => {
             expect(parselength('0')).to.be.like({value:0,units:''});
             expect(parselength('0px')).to.be.like({value:0,units:'px'});

@@ -34,9 +34,6 @@ module.exports = (function() {
         const mm = inch / 25.4;
 
         switch (value.units) {
-            case '':
-            case 'px':
-                return value.value;
             case 'em':
                 return value.value * fontSize * pt;
             case 'ex':
@@ -54,7 +51,8 @@ module.exports = (function() {
             case 'in':
                 return value.value * inch;
             default:
-                throw new Error(`Could not get pixel size of unknown unit: ${value.units}.`);
+                // For everything else, just assume they want logical pixels.
+                return value.value;
         }
     }
 
